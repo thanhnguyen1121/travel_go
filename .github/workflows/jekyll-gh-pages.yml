@@ -62,8 +62,10 @@ jobs:
         name: production-files
         path: ./build
 
-    - name: Deploy to master
+    - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TRAVEL_GOO_GITHUB_TOKEN }}
         publish_dir: ./build
+
+#  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
