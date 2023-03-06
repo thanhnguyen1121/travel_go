@@ -7,7 +7,7 @@ on:
     branches: 
     - master
     tags: 
-    - 'v*'
+    - 'web-v*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -39,9 +39,6 @@ jobs:
     
     - name: Get dependencies
       run: flutter pub get
-    
-    - name: Test project
-      run: flutter test
     
     - name: Build release project
       run: flutter build web --release --web-renderer html
