@@ -1,5 +1,6 @@
 import 'package:auth_nav/auth_nav.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_application/initialize_dependencies.dart';
 import 'package:flutter_application/ui/blocs/blocs.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,7 +10,8 @@ import 'application.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual, overlays: [SystemUiOverlay.bottom]);
   await initializeDependencies();
 
   runApp(MultiBlocProvider(
