@@ -37,6 +37,9 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
+      - name: Build make index
+        run: flutter run -d chrome
+
       - name: Build release project
         run: flutter build web --release --web-renderer html
 

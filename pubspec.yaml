@@ -40,6 +40,8 @@ dependencies:
 
   carousel_slider: ^4.2.1
 
+  go_router: ^6.2.0
+
   #auth_nav
   auth_nav:
     git: https://github.com/dangngocduc/auth_nav
@@ -49,6 +51,8 @@ dependencies:
 
   # Collections and utilities functions and classes related to collections.
   collection: ^1.16.0
+
+  intercom_flutter: ^7.6.6
 
 
 

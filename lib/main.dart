@@ -10,8 +10,8 @@ import 'application.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual, overlays: [SystemUiOverlay.bottom]);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+      overlays: [SystemUiOverlay.bottom]);
   await initializeDependencies();
 
   runApp(MultiBlocProvider(
