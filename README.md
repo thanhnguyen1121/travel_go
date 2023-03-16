@@ -1,6 +1,12 @@
+# Link web:
+```sh
+  https://travel-goo-cf6e3.web.app/#/
+```
+
+
 # flutter_application
 
-This template base on Flutter 2.10.3
+This template base on Flutter 3.7.5
 
 ## Structure
 - assets
