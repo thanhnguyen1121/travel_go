@@ -15,7 +15,7 @@ class HomePeopleSayAboutUsWidget extends StatelessWidget {
         children: [
           Text(
             "What People Say About Us",
-            style: context.textTheme.headline3,
+            style: context.textTheme.displaySmall,
           ),
           const SizedBox(
             height: 30,

@@ -4,9 +4,14 @@ import 'package:flutter_application/utils/context_extension.dart';
 class TravelGooButtonDefault extends StatelessWidget {
   final String title;
   final VoidCallback? onTap;
+  final Color? titleColor;
 
-  const TravelGooButtonDefault({Key? key, required this.title, this.onTap})
-      : super(key: key);
+  const TravelGooButtonDefault({
+    Key? key,
+    required this.title,
+    this.onTap,
+    this.titleColor,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +23,9 @@ class TravelGooButtonDefault extends StatelessWidget {
       onTap: onTap?.call,
       child: Text(
         title,
-        style: context.textTheme.bodyText2?.copyWith(
+        style: context.textTheme.bodyMedium?.copyWith(
           fontSize: 16,
+          color: titleColor ?? Colors.black,
         ),
       ),
     );

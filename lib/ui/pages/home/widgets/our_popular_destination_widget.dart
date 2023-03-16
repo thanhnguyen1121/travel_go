@@ -16,7 +16,7 @@ class OurPopularDestinationWidget extends StatelessWidget {
         children: [
           Text(
             "Our Popular Destinations",
-            style: context.textTheme.headline3,
+            style: context.textTheme.displaySmall,
           ),
           const SizedBox(
             height: 36,
@@ -42,13 +42,17 @@ class OurPopularDestinationWidget extends StatelessWidget {
                         countryName: "Thailand",
                         description: "20+ Spots\n2D & 3N",
                       ),
-                      const SizedBox(height: 24,),
+                      const SizedBox(
+                        height: 24,
+                      ),
                       OurPopularDestinationItemWidget(
                         imageUrl: Assets.images.imgPopularDestinationTwo.path,
                         countryName: "Indonesia",
                         description: "25+ Spots\n3D & 3N",
                       ),
-                      const SizedBox(height: 24,),
+                      const SizedBox(
+                        height: 24,
+                      ),
                       OurPopularDestinationItemWidget(
                         imageUrl: Assets.images.imgPopularDestinationThree.path,
                         countryName: "New Zeland",

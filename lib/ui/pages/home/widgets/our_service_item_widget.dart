@@ -21,12 +21,14 @@ class OurServiceItemWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        boxShadow: enableShadow ? [
-          BoxShadow(
-              color: Colors.black.withOpacity(0.15),
-              offset: const Offset(0, 4),
-              blurRadius: 16),
-        ] : null,
+        boxShadow: enableShadow
+            ? [
+                BoxShadow(
+                    color: Colors.black.withOpacity(0.15),
+                    offset: const Offset(0, 4),
+                    blurRadius: 16),
+              ]
+            : null,
         color: enableShadow ? Colors.white : const Color(0xffF9F9F9),
       ),
       margin: const EdgeInsets.symmetric(horizontal: 24),
@@ -44,7 +46,7 @@ class OurServiceItemWidget extends StatelessWidget {
           ),
           Text(
             "Hotel Booking",
-            style: context.textTheme.headline5,
+            style: context.textTheme.headlineSmall,
           ),
           const SizedBox(
             height: 12,
@@ -52,7 +54,7 @@ class OurServiceItemWidget extends StatelessWidget {
           Text(
             "You can easily book your according to your\n"
             "budget hotel by our website.",
-            style: context.textTheme.bodyText2,
+            style: context.textTheme.bodyMedium,
           )
         ],
       ),

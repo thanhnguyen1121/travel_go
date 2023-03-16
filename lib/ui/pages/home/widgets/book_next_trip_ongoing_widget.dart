@@ -55,7 +55,7 @@ class BookNextTripOngoingWidget extends StatelessWidget {
             children: [
               Text(
                 "Ongoing",
-                style: context.textTheme.bodyText2?.copyWith(
+                style: context.textTheme.bodyMedium?.copyWith(
                   fontWeight: FontWeight.w500,
                   color: const Color(0xff84829A),
                 ),
@@ -65,7 +65,7 @@ class BookNextTripOngoingWidget extends StatelessWidget {
               ),
               Text(
                 "Trip to rome",
-                style: context.textTheme.bodyText1?.copyWith(
+                style: context.textTheme.bodyLarge?.copyWith(
                   color: const Color(0xff080809),
                   fontSize: 18,
                 ),
@@ -77,13 +77,13 @@ class BookNextTripOngoingWidget extends StatelessWidget {
                 text: TextSpan(children: [
                   TextSpan(
                       text: "40%",
-                      style: context.textTheme.bodyText2?.copyWith(
+                      style: context.textTheme.bodyMedium?.copyWith(
                         color: const Color(0xff8A79DF),
                         fontSize: 14,
                       )),
                   TextSpan(
                     text: " completed",
-                    style: context.textTheme.bodyText2?.copyWith(
+                    style: context.textTheme.bodyMedium?.copyWith(
                       color: Colors.black,
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
@@ -91,7 +91,9 @@ class BookNextTripOngoingWidget extends StatelessWidget {
                   ),
                 ]),
               ),
-              const SizedBox(height: 8,),
+              const SizedBox(
+                height: 8,
+              ),
               LinearPercentIndicator(
                 width: 150,
                 lineHeight: 5.0,

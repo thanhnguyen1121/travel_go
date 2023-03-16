@@ -50,15 +50,15 @@ class PeopleSayAboutUsItemWidget extends StatelessWidget {
                               textAlign: TextAlign.center,
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
-                              style: context.textTheme.bodyText2,
+                              style: context.textTheme.bodyMedium,
                             ),
                             const SizedBox(
                               height: 12,
                             ),
                             Text(
                               "-Jeo Stanlee",
-                              style: context.textTheme.headline6?.copyWith(
-                                  fontSize: 22, color: Colors.black),
+                              style: context.textTheme.titleLarge
+                                  ?.copyWith(fontSize: 22, color: Colors.black),
                             )
                           ],
                         ),

@@ -4,67 +4,66 @@ import 'package:google_fonts/google_fonts.dart';
 ThemeData light(BuildContext context) {
   return ThemeData.light().copyWith(
     textTheme: GoogleFonts.openSansTextTheme().copyWith(
-      headline1: GoogleFonts.openSansTextTheme().headline1?.copyWith(
+      displayLarge: GoogleFonts.openSansTextTheme().displayLarge?.copyWith(
             fontSize: 75,
             fontWeight: FontWeight.w900,
             color: Colors.white,
           ),
-      headline2: GoogleFonts.openSansTextTheme().headline2?.copyWith(
+      displayMedium: GoogleFonts.openSansTextTheme().displayMedium?.copyWith(
             fontSize: 75,
             fontWeight: FontWeight.w900,
             color: Colors.white,
           ),
-      headline3: GoogleFonts.openSansTextTheme().headline3?.copyWith(
+      displaySmall: GoogleFonts.openSansTextTheme().displaySmall?.copyWith(
             fontSize: 40,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
-      headline4: GoogleFonts.openSansTextTheme().headline4?.copyWith(
+      headlineMedium: GoogleFonts.openSansTextTheme().headlineMedium?.copyWith(
             fontSize: 32,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
-      headline5: GoogleFonts.openSansTextTheme().headline5?.copyWith(
+      headlineSmall: GoogleFonts.openSansTextTheme().headlineSmall?.copyWith(
             fontSize: 24,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
-      headline6: GoogleFonts.openSansTextTheme().headline6?.copyWith(
+      titleLarge: GoogleFonts.openSansTextTheme().titleLarge?.copyWith(
             fontSize: 20,
             fontWeight: FontWeight.w500,
             color: Colors.white,
           ),
-      bodyText1: GoogleFonts.openSansTextTheme().bodyText1?.copyWith(
+      bodyLarge: GoogleFonts.openSansTextTheme().bodyLarge?.copyWith(
             fontSize: 16,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
-      bodyText2: GoogleFonts.openSansTextTheme().bodyText2?.copyWith(
+      bodyMedium: GoogleFonts.openSansTextTheme().bodyMedium?.copyWith(
             fontSize: 16,
             fontWeight: FontWeight.w300,
             color: Colors.black,
           ),
-      subtitle1: GoogleFonts.openSansTextTheme().subtitle1?.copyWith(
+      titleMedium: GoogleFonts.openSansTextTheme().titleMedium?.copyWith(
             fontSize: 36,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
-      subtitle2: GoogleFonts.openSansTextTheme().subtitle2?.copyWith(
+      titleSmall: GoogleFonts.openSansTextTheme().titleSmall?.copyWith(
             fontSize: 20,
             fontWeight: FontWeight.w300,
             color: Colors.black,
           ),
-
-      caption: GoogleFonts.openSansTextTheme().caption?.copyWith(
-        fontSize: 13,
-        fontWeight: FontWeight.w500,
-        color: Colors.black,
-      ),
-      overline: GoogleFonts.openSansTextTheme().overline?.copyWith(
-        fontSize: 8,
-        fontWeight: FontWeight.w600,
-        color: Colors.black,
-      ),
+      bodySmall: GoogleFonts.openSansTextTheme().bodySmall?.copyWith(
+            fontSize: 13,
+            fontWeight: FontWeight.w500,
+            color: Colors.black,
+          ),
+      labelSmall: GoogleFonts.openSansTextTheme().labelSmall?.copyWith(
+            fontSize: 8,
+            fontWeight: FontWeight.w600,
+            color: Colors.black,
+          ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(

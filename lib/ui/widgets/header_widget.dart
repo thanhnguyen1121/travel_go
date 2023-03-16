@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/gen/assets.gen.dart';
 import 'package:flutter_application/lib.dart';
 import 'package:flutter_application/ui/widgets/header_tab_widget.dart';
 
@@ -48,14 +47,14 @@ class HeaderWidget extends StatelessWidget {
                 Text(
                   "Your Imagination Is\nYour Only Limit",
                   textAlign: TextAlign.center,
-                  style: context.textTheme.headline1,
+                  style: context.textTheme.displayLarge,
                 ),
                 const SizedBox(height: 60),
                 Text(
                   "We always try to make our customer Happy. We provide all kind of facilities.\n"
                   "Your Satisfaction is our main priority",
                   textAlign: TextAlign.center,
-                  style: context.textTheme.bodyText2
+                  style: context.textTheme.bodyMedium
                       ?.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 40),
@@ -65,7 +64,7 @@ class HeaderWidget extends StatelessWidget {
                   },
                   child: Text(
                     "Discover more",
-                    style: context.textTheme.headline6?.copyWith(
+                    style: context.textTheme.titleLarge?.copyWith(
                       height: 1.0,
                     ),
                   ),

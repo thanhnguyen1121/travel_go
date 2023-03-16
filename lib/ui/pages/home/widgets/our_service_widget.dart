@@ -13,10 +13,12 @@ class OurServiceWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          const SizedBox(height: 72,),
+          const SizedBox(
+            height: 72,
+          ),
           Text(
             "Our Service",
-            style: context.textTheme.headline3,
+            style: context.textTheme.displaySmall,
           ),
           const SizedBox(
             height: 62,

@@ -44,13 +44,13 @@ class OurPopularDestinationItemWidget extends StatelessWidget {
                 children: [
                   Text(
                     countryName,
-                    style: context.textTheme.bodyText1?.copyWith(
+                    style: context.textTheme.bodyLarge?.copyWith(
                       color: Colors.black,
                     ),
                   ),
                   Text(
                     description,
-                    style: context.textTheme.bodyText1?.copyWith(
+                    style: context.textTheme.bodyLarge?.copyWith(
                       color: Colors.black,
                     ),
                   ),

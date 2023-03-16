@@ -53,7 +53,7 @@ class BookYourTripItemWidget extends StatelessWidget {
           ),
           Text(
             "Trip To Greece",
-            style: context.textTheme.bodyText1?.copyWith(
+            style: context.textTheme.bodyLarge?.copyWith(
               fontSize: 18,
               color: const Color(0xff080809),
             ),
@@ -63,7 +63,7 @@ class BookYourTripItemWidget extends StatelessWidget {
             children: [
               Text(
                 "14-29 June ",
-                style: context.textTheme.bodyText2?.copyWith(
+                style: context.textTheme.bodyMedium?.copyWith(
                   color: const Color(0xff84829A),
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -79,7 +79,7 @@ class BookYourTripItemWidget extends StatelessWidget {
               ),
               Text(
                 " by Robbin joseph",
-                style: context.textTheme.bodyText2?.copyWith(
+                style: context.textTheme.bodyMedium?.copyWith(
                   color: const Color(0xff84829A),
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -145,7 +145,7 @@ class BookYourTripItemWidget extends StatelessWidget {
               ),
               Text(
                 "24 people going",
-                style: context.textTheme.bodyText1
+                style: context.textTheme.bodyLarge
                     ?.copyWith(color: const Color(0xff84829A)),
               ),
               const Spacer(),

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/lib.dart';
+import 'package:flutter_application/ui/pages/about_us/about_us_page.dart';
+import 'package:flutter_application/ui/pages/service/service_page.dart';
+import 'package:flutter_application/ui/widgets/travel_goo_button_default.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HeaderTabWidget extends StatelessWidget {
@@ -14,7 +18,9 @@ class HeaderTabWidget extends StatelessWidget {
         Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const SizedBox(height: 32,),
+            const SizedBox(
+              height: 12,
+            ),
             Text(
               "Travel",
               style: GoogleFonts.laila(
@@ -39,27 +45,32 @@ class HeaderTabWidget extends StatelessWidget {
           child: Wrap(
             spacing: 36,
             children: [
-              Text(
-                "Home",
-                style: context.textTheme.headline6,
+              TravelGooButtonDefault(
+                title: "Home",
+                titleColor: Colors.white,
+                onTap: () {
+                  context.go("/");
+                },
               ),
-              Text(
-                "About Us",
-                style: context.textTheme.headline6,
+              TravelGooButtonDefault(
+                title: "About Us",
+                titleColor: Colors.white,
+                onTap: () {
+                  context.go(AboutUsPage.routeName);
+                },
               ),
-              Text(
-                "Packages",
-                style: context.textTheme.headline6,
+              TravelGooButtonDefault(
+                title: "Packages",
+                titleColor: Colors.white,
+                onTap: () {
+                  context.go(ServicePage.routeName);
+                },
               ),
             ],
           ),
         ),
         Row(
           children: [
-            Assets.icons.icStarFavorite.svg(width: 36, height: 36),
-            const SizedBox(
-              width: 32,
-            ),
             Assets.icons.icUserProfileOutline.svg(width: 36, height: 36),
           ],
         )

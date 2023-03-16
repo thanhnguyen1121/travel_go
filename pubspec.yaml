@@ -45,14 +45,11 @@ dependencies:
   #auth_nav
   auth_nav:
     git: https://github.com/dangngocduc/auth_nav
-
   oauth2_dio:
     git: https://github.com/dangngocduc/oauth2_dio
 
   # Collections and utilities functions and classes related to collections.
   collection: ^1.16.0
-
-  intercom_flutter: ^7.6.6
 
 
 

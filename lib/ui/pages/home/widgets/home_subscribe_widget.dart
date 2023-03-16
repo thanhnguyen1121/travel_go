@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/gen/assets.gen.dart';
 import 'package:flutter_application/lib.dart';
 import 'package:flutter_application/ui/widgets/design_system/travel_text_field.dart';
 import 'package:flutter_application/ui/widgets/travel_goo_button.dart';
@@ -30,7 +29,7 @@ class HomeSubscribeWidget extends StatelessWidget {
                     "Subscribe to get information, latest news and other "
                     "interesting offers about Cobham",
                     textAlign: TextAlign.center,
-                    style: context.textTheme.headline5?.copyWith(
+                    style: context.textTheme.headlineSmall?.copyWith(
                       color: const Color(0xff5E6282),
                     ),
                   ),
@@ -45,11 +44,11 @@ class HomeSubscribeWidget extends StatelessWidget {
                         width: 350,
                         height: 50,
                         child: TravelTextField(
-                          prefixIcon:
-                              Padding(
-                                padding: const EdgeInsets.all(16),
-                                child: Assets.icons.icEmail.svg(width: 24, height: 24),
-                              ),
+                          prefixIcon: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child:
+                                Assets.icons.icEmail.svg(width: 24, height: 24),
+                          ),
                           hint: "Your email",
                         ),
                       ),

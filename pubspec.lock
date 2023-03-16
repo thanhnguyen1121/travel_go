@@ -414,30 +414,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.0"
-  intercom_flutter:
-    dependency: "direct main"
-    description:
-      name: intercom_flutter
-      sha256: f64a241edb3598dbe8772f287cbddd4bba54e655624e44c145e1b141fe89ba6d
-      url: "https://pub.dev"
-    source: hosted
-    version: "7.6.6"
-  intercom_flutter_platform_interface:
-    dependency: transitive
-    description:
-      name: intercom_flutter_platform_interface
-      sha256: "54c27b333eaef04eea4c2cc6866949998c3813a1f7979c698e39045684a8bd55"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.2.3"
-  intercom_flutter_web:
-    dependency: transitive
-    description:
-      name: intercom_flutter_web
-      sha256: "898c9dcc2dfbadd23771271e6f42e5375b86255b99fcc5547379c75980077c13"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.3"
   intl:
     dependency: transitive
     description:
@@ -892,14 +868,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
-  uuid:
-    dependency: transitive
-    description:
-      name: uuid
-      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.7"
   vector_math:
     dependency: transitive
     description:

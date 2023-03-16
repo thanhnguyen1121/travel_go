@@ -21,9 +21,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_apple.png
   AssetGenImage get icApple => const AssetGenImage('assets/icons/ic_apple.png');
 
+  /// File path: assets/icons/ic_arrow_down.svg
+  SvgGenImage get icArrowDown =>
+      const SvgGenImage('assets/icons/ic_arrow_down.svg');
+
   /// File path: assets/icons/ic_bar_chart_outlined.svg
   SvgGenImage get icBarChartOutlined =>
       const SvgGenImage('assets/icons/ic_bar_chart_outlined.svg');
+
+  /// File path: assets/icons/ic_bi_shield_check.svg
+  SvgGenImage get icBiShieldCheck =>
+      const SvgGenImage('assets/icons/ic_bi_shield_check.svg');
 
   /// File path: assets/icons/ic_building.svg
   SvgGenImage get icBuilding =>
@@ -37,12 +45,44 @@ class $AssetsIconsGen {
   SvgGenImage get icChooseDestination =>
       const SvgGenImage('assets/icons/ic_choose_destination.svg');
 
+  /// File path: assets/icons/ic_city_tour.svg
+  SvgGenImage get icCityTour =>
+      const SvgGenImage('assets/icons/ic_city_tour.svg');
+
+  /// File path: assets/icons/ic_customer_service.svg
+  SvgGenImage get icCustomerService =>
+      const SvgGenImage('assets/icons/ic_customer_service.svg');
+
+  /// File path: assets/icons/ic_easy_booking.svg
+  SvgGenImage get icEasyBooking =>
+      const SvgGenImage('assets/icons/ic_easy_booking.svg');
+
   /// File path: assets/icons/ic_email.svg
   SvgGenImage get icEmail => const SvgGenImage('assets/icons/ic_email.svg');
+
+  /// File path: assets/icons/ic_explore_world.svg
+  SvgGenImage get icExploreWorld =>
+      const SvgGenImage('assets/icons/ic_explore_world.svg');
 
   /// File path: assets/icons/ic_facebook.png
   AssetGenImage get icFacebook =>
       const AssetGenImage('assets/icons/ic_facebook.png');
+
+  /// File path: assets/icons/ic_facility_baby.svg
+  SvgGenImage get icFacilityBaby =>
+      const SvgGenImage('assets/icons/ic_facility_baby.svg');
+
+  /// File path: assets/icons/ic_facility_camp.svg
+  SvgGenImage get icFacilityCamp =>
+      const SvgGenImage('assets/icons/ic_facility_camp.svg');
+
+  /// File path: assets/icons/ic_facility_drink.svg
+  SvgGenImage get icFacilityDrink =>
+      const SvgGenImage('assets/icons/ic_facility_drink.svg');
+
+  /// File path: assets/icons/ic_facility_world.svg
+  SvgGenImage get icFacilityWorld =>
+      const SvgGenImage('assets/icons/ic_facility_world.svg');
 
   /// File path: assets/icons/ic_google_play.png
   AssetGenImage get icGooglePlay =>
@@ -61,6 +101,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_instagram.png
   AssetGenImage get icInstagram =>
       const AssetGenImage('assets/icons/ic_instagram.png');
+
+  /// File path: assets/icons/ic_island_tour.svg
+  SvgGenImage get icIslandTour =>
+      const SvgGenImage('assets/icons/ic_island_tour.svg');
 
   /// File path: assets/icons/ic_leaf.svg
   SvgGenImage get icLeaf => const SvgGenImage('assets/icons/ic_leaf.svg');
@@ -87,6 +131,46 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_send.svg
   SvgGenImage get icSend => const SvgGenImage('assets/icons/ic_send.svg');
 
+  /// File path: assets/icons/ic_service_best_price.svg
+  SvgGenImage get icServiceBestPrice =>
+      const SvgGenImage('assets/icons/ic_service_best_price.svg');
+
+  /// File path: assets/icons/ic_service_city_tour.svg
+  SvgGenImage get icServiceCityTour =>
+      const SvgGenImage('assets/icons/ic_service_city_tour.svg');
+
+  /// File path: assets/icons/ic_service_climbing.svg
+  SvgGenImage get icServiceClimbing =>
+      const SvgGenImage('assets/icons/ic_service_climbing.svg');
+
+  /// File path: assets/icons/ic_service_destination.svg
+  SvgGenImage get icServiceDestination =>
+      const SvgGenImage('assets/icons/ic_service_destination.svg');
+
+  /// File path: assets/icons/ic_service_diving.svg
+  SvgGenImage get icServiceDiving =>
+      const SvgGenImage('assets/icons/ic_service_diving.svg');
+
+  /// File path: assets/icons/ic_service_flying.svg
+  SvgGenImage get icServiceFlying =>
+      const SvgGenImage('assets/icons/ic_service_flying.svg');
+
+  /// File path: assets/icons/ic_service_hiking.svg
+  SvgGenImage get icServiceHiking =>
+      const SvgGenImage('assets/icons/ic_service_hiking.svg');
+
+  /// File path: assets/icons/ic_service_photography.svg
+  SvgGenImage get icServicePhotography =>
+      const SvgGenImage('assets/icons/ic_service_photography.svg');
+
+  /// File path: assets/icons/ic_service_staking.svg
+  SvgGenImage get icServiceStaking =>
+      const SvgGenImage('assets/icons/ic_service_staking.svg');
+
+  /// File path: assets/icons/ic_service_tour.svg
+  SvgGenImage get icServiceTour =>
+      const SvgGenImage('assets/icons/ic_service_tour.svg');
+
   /// File path: assets/icons/ic_simple_calender.svg
   SvgGenImage get icSimpleCalender =>
       const SvgGenImage('assets/icons/ic_simple_calender.svg');
@@ -103,6 +187,9 @@ class $AssetsIconsGen {
   SvgGenImage get icTourPlan =>
       const SvgGenImage('assets/icons/ic_tour_plan.svg');
 
+  /// File path: assets/icons/ic_travel.svg
+  SvgGenImage get icTravel => const SvgGenImage('assets/icons/ic_travel.svg');
+
   /// File path: assets/icons/ic_twitter.png
   AssetGenImage get icTwitter =>
       const AssetGenImage('assets/icons/ic_twitter.png');
@@ -115,17 +202,28 @@ class $AssetsIconsGen {
   List<dynamic> get values => [
         homeBlack24dp,
         icApple,
+        icArrowDown,
         icBarChartOutlined,
+        icBiShieldCheck,
         icBuilding,
         icCarbonMap,
         icChooseDestination,
+        icCityTour,
+        icCustomerService,
+        icEasyBooking,
         icEmail,
+        icExploreWorld,
         icFacebook,
+        icFacilityBaby,
+        icFacilityCamp,
+        icFacilityDrink,
+        icFacilityWorld,
         icGooglePlay,
         icHeart,
         icHistory,
         icHotelBooking,
         icInstagram,
+        icIslandTour,
         icLeaf,
         icLocation,
         icMakePayment,
@@ -133,10 +231,21 @@ class $AssetsIconsGen {
         icNavigateNext,
         icReachAirportAndSelectDate,
         icSend,
+        icServiceBestPrice,
+        icServiceCityTour,
+        icServiceClimbing,
+        icServiceDestination,
+        icServiceDiving,
+        icServiceFlying,
+        icServiceHiking,
+        icServicePhotography,
+        icServiceStaking,
+        icServiceTour,
         icSimpleCalender,
         icStarFavorite,
         icTicketBooking,
         icTourPlan,
+        icTravel,
         icTwitter,
         icUserProfileOutline
       ];
@@ -152,6 +261,30 @@ class $AssetsImagesGen {
   /// File path: assets/images/icon_app.png
   AssetGenImage get iconApp =>
       const AssetGenImage('assets/images/icon_app.png');
+
+  /// File path: assets/images/img_about_travel_goo.png
+  AssetGenImage get imgAboutTravelGoo =>
+      const AssetGenImage('assets/images/img_about_travel_goo.png');
+
+  /// File path: assets/images/img_about_us_01.png
+  AssetGenImage get imgAboutUs01 =>
+      const AssetGenImage('assets/images/img_about_us_01.png');
+
+  /// File path: assets/images/img_about_us_02.png
+  AssetGenImage get imgAboutUs02 =>
+      const AssetGenImage('assets/images/img_about_us_02.png');
+
+  /// File path: assets/images/img_about_us_03.png
+  AssetGenImage get imgAboutUs03 =>
+      const AssetGenImage('assets/images/img_about_us_03.png');
+
+  /// File path: assets/images/img_about_us_04.png
+  AssetGenImage get imgAboutUs04 =>
+      const AssetGenImage('assets/images/img_about_us_04.png');
+
+  /// File path: assets/images/img_about_us_banner.png
+  AssetGenImage get imgAboutUsBanner =>
+      const AssetGenImage('assets/images/img_about_us_banner.png');
 
   /// File path: assets/images/img_best_packages_for_you_one.png
   AssetGenImage get imgBestPackagesForYouOne =>
@@ -176,6 +309,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_book_your_trip_item.png
   AssetGenImage get imgBookYourTripItem =>
       const AssetGenImage('assets/images/img_book_your_trip_item.png');
+
+  /// File path: assets/images/img_fancility_bg.png
+  AssetGenImage get imgFancilityBg =>
+      const AssetGenImage('assets/images/img_fancility_bg.png');
 
   /// File path: assets/images/img_location_popular_desinations.png
   AssetGenImage get imgLocationPopularDesinations =>
@@ -209,6 +346,14 @@ class $AssetsImagesGen {
   AssetGenImage get imgPopularDestinationTwo =>
       const AssetGenImage('assets/images/img_popular_destination_two.png');
 
+  /// File path: assets/images/img_service_bg.jpg
+  AssetGenImage get imgServiceBg =>
+      const AssetGenImage('assets/images/img_service_bg.jpg');
+
+  /// File path: assets/images/img_service_post.png
+  AssetGenImage get imgServicePost =>
+      const AssetGenImage('assets/images/img_service_post.png');
+
   /// File path: assets/images/img_trip_complete_header.png
   AssetGenImage get imgTripCompleteHeader =>
       const AssetGenImage('assets/images/img_trip_complete_header.png');
@@ -221,12 +366,19 @@ class $AssetsImagesGen {
   List<AssetGenImage> get values => [
         icLogoSplash,
         iconApp,
+        imgAboutTravelGoo,
+        imgAboutUs01,
+        imgAboutUs02,
+        imgAboutUs03,
+        imgAboutUs04,
+        imgAboutUsBanner,
         imgBestPackagesForYouOne,
         imgBestPackagesForYouThree,
         imgBestPackagesForYouTwo,
         imgBgHeader,
         imgBgSubcribe,
         imgBookYourTripItem,
+        imgFancilityBg,
         imgLocationPopularDesinations,
         imgOurBestService,
         imgPeopleAvt,
@@ -235,6 +387,8 @@ class $AssetsImagesGen {
         imgPopularDestinationOne,
         imgPopularDestinationThree,
         imgPopularDestinationTwo,
+        imgServiceBg,
+        imgServicePost,
         imgTripCompleteHeader,
         roundHomeBlack24dp
       ];

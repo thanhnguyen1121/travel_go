@@ -73,21 +73,19 @@ class TravelTextField extends FormField<String> {
                 state.didChange(value);
                 onChanged?.call(value);
               },
-              style: state.context.textTheme.bodyText2?.copyWith(height: 1),
+              style: state.context.textTheme.bodyMedium?.copyWith(height: 1),
               decoration: const InputDecoration()
                   .applyDefaults(Theme.of(state.context).inputDecorationTheme)
                   .copyWith(
                     hintText: hint,
-                    hintStyle: state.context.textTheme.bodyText2?.copyWith(
-                      color: const Color(0xff39425D),
-                      height: 1.0
-                    ),
+                    hintStyle: state.context.textTheme.bodyMedium
+                        ?.copyWith(color: const Color(0xff39425D), height: 1.0),
                     suffixIcon: suffixIcon,
                     prefixIcon: prefixIcon,
                     errorStyle: const TextStyle(
                         height: 0.01, color: Colors.transparent),
                     floatingLabelBehavior: floatingLabelBehavior,
-                    counterStyle: state.context.textTheme.caption?.copyWith(
+                    counterStyle: state.context.textTheme.bodySmall?.copyWith(
                       color: Colors.transparent,
                       height: double.minPositive,
                     ),

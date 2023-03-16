@@ -47,7 +47,7 @@ class BookStepItemWidget extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: context.textTheme.bodyText1
+                style: context.textTheme.bodyLarge
                     ?.copyWith(color: const Color(0xff5E6282)),
               ),
               const SizedBox(
@@ -55,7 +55,7 @@ class BookStepItemWidget extends StatelessWidget {
               ),
               Text(
                 subtitle,
-                style: context.textTheme.bodyText2
+                style: context.textTheme.bodyMedium
                     ?.copyWith(color: const Color(0xff5E6282)),
               )
             ],

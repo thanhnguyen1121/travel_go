@@ -30,7 +30,7 @@ class OurBestServiceWidget extends StatelessWidget {
                 Text(
                   "We always try to give you\nthe best service",
                   textAlign: TextAlign.center,
-                  style: context.textTheme.headline3,
+                  style: context.textTheme.displaySmall,
                 ),
                 const SizedBox(
                   height: 20,
@@ -38,7 +38,7 @@ class OurBestServiceWidget extends StatelessWidget {
                 Text(
                   "We always try to make our customer Happy. We provide all kind of\n"
                   "facilities. Your Satisfaction is our main priority.",
-                  style: context.textTheme.bodyText2,
+                  style: context.textTheme.bodyMedium,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 60),

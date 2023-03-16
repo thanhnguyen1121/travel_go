@@ -33,7 +33,7 @@ class OurBestServiceItemWidget extends StatelessWidget {
           ),
           Text(
             title,
-            style: context.textTheme.headline4?.copyWith(
+            style: context.textTheme.headlineMedium?.copyWith(
               fontSize: 36,
               color: Colors.black,
             ),
@@ -41,7 +41,7 @@ class OurBestServiceItemWidget extends StatelessWidget {
           Text(
             subTitle,
             textAlign: TextAlign.center,
-            style: context.textTheme.headline6?.copyWith(
+            style: context.textTheme.titleLarge?.copyWith(
               color: Colors.black,
             ),
           )

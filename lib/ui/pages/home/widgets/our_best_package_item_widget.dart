@@ -55,12 +55,12 @@ class OurBestPackageItemWidget extends StatelessWidget {
                       children: [
                         Text(
                           duration,
-                          style: context.textTheme.bodyText2,
+                          style: context.textTheme.bodyMedium,
                         ),
                         const Spacer(),
                         Text(
                           price,
-                          style: context.textTheme.bodyText2,
+                          style: context.textTheme.bodyMedium,
                         )
                       ],
                     ),
@@ -72,7 +72,7 @@ class OurBestPackageItemWidget extends StatelessWidget {
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style:
-                          context.textTheme.bodyText1?.copyWith(fontSize: 12),
+                          context.textTheme.bodyLarge?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       height: 16,
@@ -87,7 +87,7 @@ class OurBestPackageItemWidget extends StatelessWidget {
                             ),
                             Text(
                               location,
-                              style: context.textTheme.headline6?.copyWith(
+                              style: context.textTheme.titleLarge?.copyWith(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -97,7 +97,7 @@ class OurBestPackageItemWidget extends StatelessWidget {
                         const Spacer(),
                         Text(
                           "Know More",
-                          style: context.textTheme.bodyText1?.copyWith(
+                          style: context.textTheme.bodyLarge?.copyWith(
                             decoration: TextDecoration.underline,
                           ),
                         )

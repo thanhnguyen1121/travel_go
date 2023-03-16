@@ -48,7 +48,7 @@ class FooterWidget extends StatelessWidget {
                   Text(
                     "Book your trip in minute, get full\nControl for much longer.",
                     textAlign: TextAlign.start,
-                    style: context.textTheme.caption,
+                    style: context.textTheme.bodySmall,
                   )
                 ],
               ),
@@ -60,7 +60,7 @@ class FooterWidget extends StatelessWidget {
                 children: [
                   Text(
                     "Company",
-                    style: context.textTheme.headline6?.copyWith(
+                    style: context.textTheme.titleLarge?.copyWith(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                     ),
@@ -96,7 +96,7 @@ class FooterWidget extends StatelessWidget {
                 children: [
                   Text(
                     "Contact",
-                    style: context.textTheme.headline6?.copyWith(
+                    style: context.textTheme.titleLarge?.copyWith(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                     ),
@@ -132,7 +132,7 @@ class FooterWidget extends StatelessWidget {
                 children: [
                   Text(
                     "More",
-                    style: context.textTheme.headline6?.copyWith(
+                    style: context.textTheme.titleLarge?.copyWith(
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
                     ),
@@ -184,7 +184,7 @@ class FooterWidget extends StatelessWidget {
                   ),
                   Text(
                     "Discover our app",
-                    style: context.textTheme.bodyText2?.copyWith(
+                    style: context.textTheme.bodyMedium?.copyWith(
                       color: Colors.black,
                     ),
                   ),
@@ -214,15 +214,15 @@ class FooterWidget extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Get it on",
-                                      style:
-                                          context.textTheme.overline?.copyWith(
+                                      style: context.textTheme.labelSmall
+                                          ?.copyWith(
                                         color: Colors.white,
                                       ),
                                     ),
                                     Text(
                                       "GOOGLE PLAY",
-                                      style:
-                                          context.textTheme.overline?.copyWith(
+                                      style: context.textTheme.labelSmall
+                                          ?.copyWith(
                                         color: Colors.white,
                                         fontSize: 10,
                                       ),
@@ -255,15 +255,15 @@ class FooterWidget extends StatelessWidget {
                                   children: [
                                     Text(
                                       "Available on the",
-                                      style:
-                                          context.textTheme.overline?.copyWith(
+                                      style: context.textTheme.labelSmall
+                                          ?.copyWith(
                                         color: Colors.white,
                                       ),
                                     ),
                                     Text(
                                       "APP STORE",
-                                      style:
-                                          context.textTheme.overline?.copyWith(
+                                      style: context.textTheme.labelSmall
+                                          ?.copyWith(
                                         color: Colors.white,
                                         fontSize: 10,
                                       ),
@@ -287,7 +287,7 @@ class FooterWidget extends StatelessWidget {
         ),
         Text(
           "All rights reserved@travelgoo.co",
-          style: context.textTheme.bodyText2,
+          style: context.textTheme.bodyMedium,
         ),
         const SizedBox(
           height: 60,

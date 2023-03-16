@@ -15,14 +15,14 @@ class BookYourNextTripWidget extends StatelessWidget {
         children: [
           Text(
             "Book Your Next Trip in 3 Easy Steps",
-            style: context.textTheme.headline3,
+            style: context.textTheme.displaySmall,
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             "Easy and Fast",
-            style: context.textTheme.headline5
+            style: context.textTheme.headlineSmall
                 ?.copyWith(fontWeight: FontWeight.w300),
           ),
           const SizedBox(

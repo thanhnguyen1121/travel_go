@@ -27,7 +27,7 @@ class OurBestPackageForUseWidget extends StatelessWidget {
               children: [
                 Text(
                   "Best Packages For You",
-                  style: context.textTheme.headline3,
+                  style: context.textTheme.displaySmall,
                 ),
                 const SizedBox(
                   height: 32,

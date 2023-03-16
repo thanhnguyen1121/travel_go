@@ -31,7 +31,7 @@ class TravelGooButton extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             title,
-            style: context.textTheme.bodyText1?.copyWith(
+            style: context.textTheme.bodyLarge?.copyWith(
               color: Colors.white,
               height: 1.0,
             ),
