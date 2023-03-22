@@ -25,7 +25,7 @@ class _DestinationPageState extends State<DestinationPage>
     with SingleTickerProviderStateMixin {
   static const tag = 'DestinationPage';
   late final TabController tabController =
-      TabController(length: 4, vsync: this, initialIndex: 1);
+      TabController(length: 5, vsync: this, initialIndex: 1);
   late ScrollController _scrollController;
   final _appbarController = StreamController<bool>();
   final _bloc = DestinationBloc();
@@ -62,6 +62,7 @@ class _DestinationPageState extends State<DestinationPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: context.customTheme.pageColor,
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (context, innerBoxIsScrolled) {

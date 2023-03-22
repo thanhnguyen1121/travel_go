@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_application/ui/pages/about_us/about_us_page.dart';
 import 'package:flutter_application/ui/pages/destination/destination_page.dart';
+import 'package:flutter_application/ui/pages/discover/see_more_discover/see_more_discover_page.dart';
 import 'package:flutter_application/ui/pages/service/service_page.dart';
 import 'package:flutter_application/utils/context_extension.dart';
 import 'package:go_router/go_router.dart';
@@ -96,6 +97,8 @@ class HeaderTabCustomWidget extends StatelessWidget {
                           } else if (index == 2) {
                             context.goNamed(ServicePage.routeName);
                           } else if (index == 3) {
+                            context.goNamed(SeeMoreDiscoverPage.routeName);
+                          } else if (index == 4) {
                             context.goNamed(AboutUsPage.routeName);
                           }
                         },
@@ -103,6 +106,7 @@ class HeaderTabCustomWidget extends StatelessWidget {
                           Tab(text: 'Home'),
                           Tab(text: 'Destination'),
                           Tab(text: 'Package'),
+                          Tab(text: 'Discover'),
                           Tab(text: 'About us'),
                         ],
                       ),

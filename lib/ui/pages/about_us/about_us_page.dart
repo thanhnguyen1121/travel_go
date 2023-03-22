@@ -24,7 +24,7 @@ class _AboutUsPageState extends State<AboutUsPage>
     with SingleTickerProviderStateMixin {
   static const tag = 'AboutUsPage';
   late final TabController tabController =
-      TabController(length: 4, vsync: this, initialIndex: 3);
+      TabController(length: 5, vsync: this, initialIndex: 4);
   late ScrollController _scrollController;
   final _appbarController = StreamController<bool>();
 
@@ -59,7 +59,7 @@ class _AboutUsPageState extends State<AboutUsPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: context.customTheme.pageColor,
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (context, innerBoxIsScrolled) {
@@ -75,29 +75,47 @@ class _AboutUsPageState extends State<AboutUsPage>
               backgroundColor: context.customTheme.pageColor,
               expandedHeight: MediaQuery.of(context).size.height,
               flexibleSpace: FlexibleSpaceBar(
-                title: Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                      left: 32.0,
-                      bottom: 32.0,
-                    ),
-                    child: Text(
-                      "About us",
-                      style: GoogleFonts.poppins().copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 32,
-                      ),
-                    ),
-                  ),
-                ),
                 background: Stack(
                   children: [
                     Assets.images.imgAboutUsBanner.image(
                       width: double.infinity,
                       height: double.infinity,
                       fit: BoxFit.cover,
+                    ),
+                    Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      alignment: Alignment.centerLeft,
+                      padding: const EdgeInsets.symmetric(horizontal: 120),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.black.withOpacity(0.5),
+                            Colors.black.withOpacity(0)
+                          ],
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(height: 120),
+                          Text(
+                            "We Bring To You\nThe Best Choose",
+                            style: context.textTheme.displayLarge,
+                          ),
+                          const SizedBox(
+                            height: 24,
+                          ),
+                          Text(
+                            "Somethings about our",
+                            style: context.textTheme.headlineMedium,
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       decoration: BoxDecoration(

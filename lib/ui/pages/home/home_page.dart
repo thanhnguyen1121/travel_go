@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage>
   final _appbarController = StreamController<bool>();
   bool lastStatus = true;
   late final TabController tabController =
-      TabController(length: 4, vsync: this, initialIndex: 0);
+      TabController(length: 5, vsync: this, initialIndex: 0);
 
   @override
   void initState() {
@@ -57,6 +57,7 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: context.customTheme.pageColor,
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (context, innerBoxIsScrolled) {

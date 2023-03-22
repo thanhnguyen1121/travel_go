@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/lib.dart';
 import 'package:flutter_application/ui/pages/discover/discover_page.dart';
+import 'package:flutter_application/ui/pages/discover/see_more_discover/see_more_discover_page.dart';
 import 'package:flutter_application/ui/widgets/header_tab_widget.dart';
 import 'package:go_router/go_router.dart';
 
@@ -59,8 +60,7 @@ class HeaderWidget extends StatelessWidget {
                 const SizedBox(height: 40),
                 ElevatedButton(
                   onPressed: () {
-                    // context.goNamed(DiscoverPage.routeName);
-                    GoRouter.of(context).pushNamed(DiscoverPage.routeName, queryParams: {'discoverId':'1'});
+                    context.goNamed(SeeMoreDiscoverPage.routeName);
                   },
                   child: Text(
                     "Discover more",

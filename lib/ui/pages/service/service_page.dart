@@ -8,7 +8,7 @@ import 'package:flutter_application/ui/pages/service/widgets/service_facility_wi
 import 'package:flutter_application/ui/pages/service/widgets/service_post_widget.dart';
 import 'package:flutter_application/ui/widgets/footer_widget.dart';
 import 'package:flutter_application/ui/widgets/header_tab_custom_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_application/utils/context_extension.dart';
 
 class ServicePage extends StatefulWidget {
   static const routeName = '/ServicePage';
@@ -23,7 +23,7 @@ class _ServicePageState extends State<ServicePage>
     with SingleTickerProviderStateMixin {
   static const tag = 'ServicePage';
   late final TabController tabController =
-      TabController(length: 4, vsync: this, initialIndex: 2);
+      TabController(length: 5, vsync: this, initialIndex: 2);
   late ScrollController _scrollController;
   final _appbarController = StreamController<bool>();
 
@@ -58,7 +58,7 @@ class _ServicePageState extends State<ServicePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: context.customTheme.pageColor,
       body: NestedScrollView(
         controller: _scrollController,
         headerSliverBuilder: (context, innerBoxIsScrolled) {
@@ -66,7 +66,8 @@ class _ServicePageState extends State<ServicePage>
             SliverAppBar(
               pinned: true,
               floating: false,
-              backgroundColor: Colors.white,
+              backgroundColor: context.customTheme.pageColor,
+              elevation: 0,
               expandedHeight: MediaQuery.of(context).size.height,
               title: HeaderTabCustomWidget(
                 tabController: tabController,
@@ -74,23 +75,6 @@ class _ServicePageState extends State<ServicePage>
                 initData: _isShrink,
               ),
               flexibleSpace: FlexibleSpaceBar(
-                title: Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(
-                      left: 32.0,
-                      bottom: 32.0,
-                    ),
-                    child: Text(
-                      "Service",
-                      style: GoogleFonts.poppins().copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 32,
-                      ),
-                    ),
-                  ),
-                ),
                 background: Stack(
                   children: [
                     Padding(
@@ -99,6 +83,41 @@ class _ServicePageState extends State<ServicePage>
                         width: double.infinity,
                         height: double.infinity,
                         fit: BoxFit.cover,
+                      ),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      alignment: Alignment.centerLeft,
+                      padding: const EdgeInsets.symmetric(horizontal: 120),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.black.withOpacity(0.5),
+                            Colors.black.withOpacity(0)
+                          ],
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(height: 120),
+                          Text(
+                            "The Most Popular\nGood Packages",
+                            style: context.textTheme.displayLarge,
+                          ),
+                          const SizedBox(
+                            height: 24,
+                          ),
+                          Text(
+                            "Choose the best package for your travel.",
+                            style: context.textTheme.headlineMedium,
+                          )
+                        ],
                       ),
                     ),
                     Container(
