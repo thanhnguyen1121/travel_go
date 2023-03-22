@@ -26,7 +26,7 @@ class TravelOutLineButton extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             border: Border.all(
-              color: borderColor ?? const Color(0xff43B97F),
+              color: borderColor ?? context.customTheme.primary,
               width: 1,
             ),
             borderRadius: BorderRadius.circular(8),

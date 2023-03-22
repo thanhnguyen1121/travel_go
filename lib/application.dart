@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/generated/l10n.dart';
+import 'package:flutter_application/router.dart';
 import 'package:flutter_application/themes.dart';
 import 'package:flutter_application/ui/pages/about_us/about_us_page.dart';
+import 'package:flutter_application/ui/pages/destination/destination_page.dart';
+import 'package:flutter_application/ui/pages/discover/discover_page.dart';
+import 'package:flutter_application/ui/pages/discover/see_more_discover/see_more_discover_page.dart';
 import 'package:flutter_application/ui/pages/pages.dart';
 import 'package:flutter_application/ui/pages/service/service_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -68,29 +72,7 @@ class _ApplicationState extends State<Application> {
     );*/
 
     return MaterialApp.router(
-      routerConfig: GoRouter(
-        routes: <RouteBase>[
-          GoRoute(
-            path: '/',
-            builder: (BuildContext context, GoRouterState state) {
-              // return const ServicePage();
-              return const MainNavigator();
-            },
-          ),
-          GoRoute(
-            path: AboutUsPage.routeName,
-            builder: (BuildContext context, GoRouterState state) {
-              return const AboutUsPage();
-            },
-          ),
-          GoRoute(
-            path: ServicePage.routeName,
-            builder: (BuildContext context, GoRouterState state) {
-              return const ServicePage();
-            },
-          ),
-        ],
-      ),
+      routerConfig: router,
       theme: light(context),
       darkTheme: dark(context),
       themeMode: ThemeMode.light,

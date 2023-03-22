@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/lib.dart';
+import 'package:flutter_application/ui/pages/discover/discover_page.dart';
 import 'package:flutter_application/ui/widgets/header_tab_widget.dart';
+import 'package:go_router/go_router.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
     return SizedBox(
-      width: width,
-      height: width / 1.4681,
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -60,7 +59,8 @@ class HeaderWidget extends StatelessWidget {
                 const SizedBox(height: 40),
                 ElevatedButton(
                   onPressed: () {
-                    print("123");
+                    // context.goNamed(DiscoverPage.routeName);
+                    GoRouter.of(context).pushNamed(DiscoverPage.routeName, queryParams: {'discoverId':'1'});
                   },
                   child: Text(
                     "Discover more",
@@ -72,10 +72,6 @@ class HeaderWidget extends StatelessWidget {
               ],
             ),
           ),
-          const Align(
-            alignment: Alignment.topCenter,
-            child: HeaderTabWidget(),
-          )
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/utils/custom_theme.dart';
 
 import '../ui/widgets/page_loading_overlay.dart';
 
@@ -15,11 +16,13 @@ extension ContextExtensions on BuildContext {
 
   Size get size => MediaQuery.of(this).size;
 
+  CustomTheme get customTheme => Theme.of(this).extension<CustomTheme>()!;
+
   ///Show loading overlay when do sth (submit action,,,,)
   Future<T> runTask<T>(Future<T> task, {Stream<double>? percent}) async {
     var overlayEntry = OverlayEntry(
         builder: (context) => PageLoadingOverlay(percent: percent));
-    Overlay.of(this)?.insert(overlayEntry);
+    Overlay.of(this).insert(overlayEntry);
     try {
       final data = await task;
       overlayEntry.remove();

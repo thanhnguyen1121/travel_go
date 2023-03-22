@@ -11,6 +11,16 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
 
+class $AssetsAnimsGen {
+  const $AssetsAnimsGen();
+
+  /// File path: assets/anims/loading_anim.json
+  String get loadingAnim => 'assets/anims/loading_anim.json';
+
+  /// List of all assets
+  List<String> get values => [loadingAnim];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
@@ -33,9 +43,16 @@ class $AssetsIconsGen {
   SvgGenImage get icBiShieldCheck =>
       const SvgGenImage('assets/icons/ic_bi_shield_check.svg');
 
+  /// File path: assets/icons/ic_black_star.svg
+  SvgGenImage get icBlackStar =>
+      const SvgGenImage('assets/icons/ic_black_star.svg');
+
   /// File path: assets/icons/ic_building.svg
   SvgGenImage get icBuilding =>
       const SvgGenImage('assets/icons/ic_building.svg');
+
+  /// File path: assets/icons/ic_car.svg
+  SvgGenImage get icCar => const SvgGenImage('assets/icons/ic_car.svg');
 
   /// File path: assets/icons/ic_carbon_map.svg
   SvgGenImage get icCarbonMap =>
@@ -52,6 +69,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_customer_service.svg
   SvgGenImage get icCustomerService =>
       const SvgGenImage('assets/icons/ic_customer_service.svg');
+
+  /// File path: assets/icons/ic_discover_location.svg
+  SvgGenImage get icDiscoverLocation =>
+      const SvgGenImage('assets/icons/ic_discover_location.svg');
 
   /// File path: assets/icons/ic_easy_booking.svg
   SvgGenImage get icEasyBooking =>
@@ -84,6 +105,9 @@ class $AssetsIconsGen {
   SvgGenImage get icFacilityWorld =>
       const SvgGenImage('assets/icons/ic_facility_world.svg');
 
+  /// File path: assets/icons/ic_flight.svg
+  SvgGenImage get icFlight => const SvgGenImage('assets/icons/ic_flight.svg');
+
   /// File path: assets/icons/ic_google_play.png
   AssetGenImage get icGooglePlay =>
       const AssetGenImage('assets/icons/ic_google_play.png');
@@ -93,6 +117,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/ic_history.svg
   SvgGenImage get icHistory => const SvgGenImage('assets/icons/ic_history.svg');
+
+  /// File path: assets/icons/ic_hotel.svg
+  SvgGenImage get icHotel => const SvgGenImage('assets/icons/ic_hotel.svg');
 
   /// File path: assets/icons/ic_hotel_booking.svg
   SvgGenImage get icHotelBooking =>
@@ -190,6 +217,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_travel.svg
   SvgGenImage get icTravel => const SvgGenImage('assets/icons/ic_travel.svg');
 
+  /// File path: assets/icons/ic_trekking.svg
+  SvgGenImage get icTrekking =>
+      const SvgGenImage('assets/icons/ic_trekking.svg');
+
   /// File path: assets/icons/ic_twitter.png
   AssetGenImage get icTwitter =>
       const AssetGenImage('assets/icons/ic_twitter.png');
@@ -205,11 +236,14 @@ class $AssetsIconsGen {
         icArrowDown,
         icBarChartOutlined,
         icBiShieldCheck,
+        icBlackStar,
         icBuilding,
+        icCar,
         icCarbonMap,
         icChooseDestination,
         icCityTour,
         icCustomerService,
+        icDiscoverLocation,
         icEasyBooking,
         icEmail,
         icExploreWorld,
@@ -218,9 +252,11 @@ class $AssetsIconsGen {
         icFacilityCamp,
         icFacilityDrink,
         icFacilityWorld,
+        icFlight,
         icGooglePlay,
         icHeart,
         icHistory,
+        icHotel,
         icHotelBooking,
         icInstagram,
         icIslandTour,
@@ -246,6 +282,7 @@ class $AssetsIconsGen {
         icTicketBooking,
         icTourPlan,
         icTravel,
+        icTrekking,
         icTwitter,
         icUserProfileOutline
       ];
@@ -309,6 +346,42 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_book_your_trip_item.png
   AssetGenImage get imgBookYourTripItem =>
       const AssetGenImage('assets/images/img_book_your_trip_item.png');
+
+  /// File path: assets/images/img_destination_four.png
+  AssetGenImage get imgDestinationFour =>
+      const AssetGenImage('assets/images/img_destination_four.png');
+
+  /// File path: assets/images/img_destination_header.png
+  AssetGenImage get imgDestinationHeader =>
+      const AssetGenImage('assets/images/img_destination_header.png');
+
+  /// File path: assets/images/img_destination_one.png
+  AssetGenImage get imgDestinationOne =>
+      const AssetGenImage('assets/images/img_destination_one.png');
+
+  /// File path: assets/images/img_destination_three.png
+  AssetGenImage get imgDestinationThree =>
+      const AssetGenImage('assets/images/img_destination_three.png');
+
+  /// File path: assets/images/img_destination_two.png
+  AssetGenImage get imgDestinationTwo =>
+      const AssetGenImage('assets/images/img_destination_two.png');
+
+  /// File path: assets/images/img_discover_header_bg.jpeg
+  AssetGenImage get imgDiscoverHeaderBg =>
+      const AssetGenImage('assets/images/img_discover_header_bg.jpeg');
+
+  /// File path: assets/images/img_discover_one.png
+  AssetGenImage get imgDiscoverOne =>
+      const AssetGenImage('assets/images/img_discover_one.png');
+
+  /// File path: assets/images/img_discover_three.png
+  AssetGenImage get imgDiscoverThree =>
+      const AssetGenImage('assets/images/img_discover_three.png');
+
+  /// File path: assets/images/img_discover_two.png
+  AssetGenImage get imgDiscoverTwo =>
+      const AssetGenImage('assets/images/img_discover_two.png');
 
   /// File path: assets/images/img_fancility_bg.png
   AssetGenImage get imgFancilityBg =>
@@ -378,6 +451,15 @@ class $AssetsImagesGen {
         imgBgHeader,
         imgBgSubcribe,
         imgBookYourTripItem,
+        imgDestinationFour,
+        imgDestinationHeader,
+        imgDestinationOne,
+        imgDestinationThree,
+        imgDestinationTwo,
+        imgDiscoverHeaderBg,
+        imgDiscoverOne,
+        imgDiscoverThree,
+        imgDiscoverTwo,
         imgFancilityBg,
         imgLocationPopularDesinations,
         imgOurBestService,
@@ -397,6 +479,7 @@ class $AssetsImagesGen {
 class Assets {
   Assets._();
 
+  static const $AssetsAnimsGen anims = $AssetsAnimsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }

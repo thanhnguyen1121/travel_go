@@ -24,7 +24,6 @@ class OurServiceWidget extends StatelessWidget {
             height: 62,
           ),
           Row(
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Expanded(
                 child: OurServiceItemWidget(

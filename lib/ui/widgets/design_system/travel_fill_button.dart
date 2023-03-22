@@ -18,7 +18,7 @@ class TravelFillButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: fillColor ?? const Color(0xff43B97F),
+      color: fillColor ?? context.customTheme.primary,
       borderRadius: BorderRadius.circular(8),
       child: InkWell(
         onTap: onTap?.call,

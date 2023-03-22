@@ -45,15 +45,14 @@ class OurServiceItemWidget extends StatelessWidget {
             height: 12,
           ),
           Text(
-            "Hotel Booking",
+            title,
             style: context.textTheme.headlineSmall,
           ),
           const SizedBox(
             height: 12,
           ),
           Text(
-            "You can easily book your according to your\n"
-            "budget hotel by our website.",
+            description,
             style: context.textTheme.bodyMedium,
           )
         ],

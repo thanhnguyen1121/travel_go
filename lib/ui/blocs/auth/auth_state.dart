@@ -1,4 +1,5 @@
-import 'package:flutter_application/data/dto/dto.dart';
+
+import 'package:flutter_application/data/model/profile_dto.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'auth_state.freezed.dart';
 
